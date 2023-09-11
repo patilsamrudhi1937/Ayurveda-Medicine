@@ -1,0 +1,968 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="referrer" content="never">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Ayurveda Medicine</title>
+    <link rel="icon" type="images" href="icon/ay.jpg">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: deepskyblue;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: red;
+        }
+        
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: red;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+        
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+        
+        h1 {
+            font-family: ui-monospace;
+            font-size: 2.0em;
+            color: deeppink;
+            text-shadow: 1px 1px 2px yellow 0px 0px red;
+        }
+        
+        .img1 {
+            width: 1280px;
+            height: 80px;
+        }
+        
+        .img-responsive {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 250px;
+        }
+        
+        .img-responsive:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        
+        .clearfix {
+            overflow: auto;
+        }
+        
+        .content {
+            background-color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .btn-btn-red-pull-right {
+            background-color: yellow;
+            border: 1px solid white;
+            color: black;
+            padding: 5px 5px;
+            cursor: pointer;
+            width: 5%;
+            display: block;
+            float: right;
+        }
+        
+        .btn-btn-red-pull-right button:not(:last-child) {
+            border-bottom: none;
+            border-right: none;
+        }
+        
+        .btn-btn-red-pull-right button:hover {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1><em><b>Ayurveda Medicine</b></em></h1>
+    </center>
+    <div class="navbar">
+        <a href="#">Ayurveda Medicine</a>
+        <div class="subnav">
+            <button class="subnavbtn">All Medicine <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.1mg.com/drugs-therapeutic-classes">Medicine By Therepeutic Class</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Featured<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.1mg.com/categories/featured/flash-deals-700">Flash Deal</a>
+                <a href="https://www.1mg.com/categories/coronavirus-prevention-925">Covid Test and Prevention</a>
+                <a href="https://www.1mg.com/categories/featured/trending-products-707">Treading Product</a>
+                <a href="https://www.1mg.com/categories/featured/top-brands-275">Top Brands</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Fitness and Supplments <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.1mg.com/categories/fitness-supplements/vitamins-minerals-9">Vitamin and Minerals</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/family-nutrition-196">Nutritions and Drinks</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/health-food-drinks-6">Health Food and Drinks</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/protein-supplements-7">Protein Supplement</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/vitamins-minerals/omega-fatty-acids-163">Omega and Fish Oil</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/immunity-boosters-142">Immunity Booster</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/vitamins-minerals/specialty-supplements-164">Specialty Supplements</a>
+                <a href="https://www.1mg.com/categories/fitness-supplements/weight-management-8">Weight Supplements</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Diabetes <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.1mg.com/categories/diabetes/diabetic-medicines-583">Diabetic Medicine</a>
+                <a href="https://www.1mg.com/categories/diabetes/diabetic-diet-584">Diabetic Diet</a>
+                <a href="https://www.1mg.com/categories/diabetes/diabetic-shoes-socks-415">Diabetic Food Health</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Ayurveda Product <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.1mg.com/categories/ayurveda/top-brands-265">Ayurveda Top Brands</a>
+                <a href="https://www.1mg.com/categories/ayurveda/supplements-49">Herbs</a>
+                <a href="https://www.1mg.com/categories/ayurveda/general-health-267">Popular Categories</a>
+                <a href="https://www.1mg.com/categories/ayurveda/unani-medicines-72">Unani Medicine</a>
+            </div>
+        </div>
+    </div>
+    <div class="style-img">
+        <a href="/hi/patanjali?utm_source=ayurvedahome&amp;utm_medium=bannner">
+            <img class="img1" src="https://onemg.gumlet.io/image/upload/v1625061044/marketing/bjlo9q3qyxkh7bkhypiz.png" alt="Ayurveda Ingredients">
+        </a>
+    </div>
+    <main>
+        <section>
+            <center><b><em><h1>Health Life Articles</h1></em></b></center>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 padding-l-none blog-content">
+
+                <div class="container-fluid padding-none margin-none" id="loadMorePost">
+                    <div class="thumbnail card blogDiv">
+                        <a href="#" title="Best Tips for Staying Healthy After 40">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/11/Ways-to-Stay-Healthy-After-40.jpg" width="200" alt="Best Tips for Staying Healthy After 40" data-pagespeed-url-hash="2217641272" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="caption card-content">
+                            <a href="https:/www.medplusmart.com/healthy-life/info/8223/best-tips-for-staying-healthy-after-40" title="Best Tips for Staying Healthy After 40">
+                                <h3>Best Tips for Staying Healthy After 40</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, November 15, 2021</p>
+                            <p class="content"></p>
+                            <p>Beyond 40 is when lot of health issues begin to show up and this age requires some serious intervention in terms of physical, mental and spiritual health. If you are already in a habit of living a healthy lifestyle, then… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Best Tips for Staying Healthy After 40" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Best Exercises for Easy Childbirth">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/10/Exercises-to-Train-for-Easy-Childbirth.jpg" width="200" alt="Best Exercises for Easy Childbirth" data-pagespeed-url-hash="2519584164" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Best Exercises for Easy Childbirth">
+                                <h3>Best Exercises for Easy Childbirth</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, October 30, 2021</p>
+                            <p class="content"></p>
+                            <p>Everything has its own process;&nbsp;childbirth is no different. Although it is a beautiful experience, it can also be quite difficult a situation to handle. One important milestone during pregnancy is the labor and for this,
+                                it is important for pregnant… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Best Exercises for Easy Childbirth" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Health Benefits of Biotin">
+                            <img class="img-responsive" width="200" alt="Health Benefits of Biotin" data-pagespeed-url-hash="458148178" src="https://blog.medplusmart.com/wp-content/uploads/2021/10/106.-Biotin.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Health Benefits of Biotin">
+                                <h3>Health Benefits of Biotin</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, October 19, 2021</p>
+                            <p class="content"></p>
+                            <p>Biotin is a water-soluble vitamin, from the family of Vitamin B. It is also known as Vitamin H, where H stands for Haar and Haut – German words which mean hair and skin. One of the main uses of biotin… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Health Benefits of Biotin" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="8 Best Exercises for Weight Loss">
+                            <img class="img-responsive" width="200" alt="8 Best Exercises for Weight Loss" data-pagespeed-url-hash="1765354632" src="https://blog.medplusmart.com/wp-content/uploads/2021/08/Best-Exercises-for-Weight-Loss-1-min.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="8 Best Exercises for Weight Loss">
+                                <h3>8 Best Exercises for Weight Loss</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, August 11, 2021</p>
+                            <p class="content"></p>
+                            <p>As more of our life become sedentary in nature, more than ever due to COVID-19, it is becoming increasingly difficult for us to stay in proper shape and stay fit. Obesity is a growing trend and thus, we are always… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="8 Best Exercises for Weight Loss" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Health Benefits of Early Morning Yoga">
+                            <img class="img-responsive" width="200" alt="Health Benefits of Early Morning Yoga" data-pagespeed-url-hash="4208776088" src="https://blog.medplusmart.com/wp-content/uploads/2021/08/Benefits-of-Morning-Yoga.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="/healthy-life/info/8145/health-benefits-of-early-morning-yoga" title="Health Benefits of Early Morning Yoga">
+                                <h3>Health Benefits of Early Morning Yoga</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, August 2, 2021</p>
+                            <p class="content"></p>
+                            <p>Yoga is a great way to maintain your health and immunity. It is easy to practice and has many benefits. Doing a bit of yoga, especially early in the mornings, can be quite fruitful for your body as well as… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Health Benefits of Early Morning Yoga" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Best Ways to Cure Insomnia Without Medication">
+                            <img class="img-responsive" width="200" alt="Best Ways to Cure Insomnia Without Medication" data-pagespeed-url-hash="2241638162" src="https://blog.medplusmart.com/wp-content/uploads/2021/07/Cure-Insomnia-Without-Medication.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Best Ways to Cure Insomnia Without Medication">
+                                <h3>Best Ways to Cure Insomnia Without Medication</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, July 28, 2021</p>
+                            <p class="content"></p>
+                            <p>Suffer from sleeping issues? This article can guide you further. In accordance with the CDC, on a given day, as many as one in five adults&nbsp;suffer&nbsp;due to insufficient amount of sleep. Insomnia can affect adolescents,
+                                adults, and even the elderly.… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Best Ways to Cure Insomnia Without Medication" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="How to Get Rid of Blackheads at Home">
+                            <img class="img-responsive" width="200" alt="How to Get Rid of Blackheads at Home" data-pagespeed-url-hash="802781130" src="https://blog.medplusmart.com/wp-content/uploads/2021/07/Blackheads-Blog.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="How to Get Rid of Blackheads at Home">
+                                <h3>How to Get Rid of Blackheads at Home</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, July 22, 2021</p>
+                            <p class="content"></p>
+                            <p>Picture this. There’s a party and you have put in a ton of effort to dress up and look great, meaning to charm everyone. Everything’s perfect except the blackheads which have made their appearance on your face overnight and
+                                now… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="How to Get Rid of Blackheads at Home" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="How to Find Best Eye Glasses for Your Face Shape">
+                            <img class="img-responsive" width="200" alt="How to Find Best Eye Glasses for Your Face Shape" data-pagespeed-url-hash="1556928187" src="https://blog.medplusmart.com/wp-content/uploads/2021/07/Face-Shape-Right-Eyeglass.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="How to Find Best Eye Glasses for Your Face Shape">
+                                <h3>How to Find Best Eye Glasses for Your Face Shape</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, July 19, 2021</p>
+                            <p class="content"></p>
+                            <p>Wearing eyeglasses needn’t be a dent in your confidence or even a drab affair anymore especially because of the wide variety of sophisticated and cool eyewear which are available nowadays. What is important is how to find the
+                                perfect glasses… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="How to Find Best Eye Glasses for Your Face Shape" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="How to Remove Scratches from Spectacles">
+                            <img class="img-responsive" width="200" alt="How to Remove Scratches from Spectacles" data-pagespeed-url-hash="440233989" src="https://blog.medplusmart.com/wp-content/uploads/2021/07/Remove-Scratches-from-Eyeglasses.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="How to Remove Scratches from Spectacles">
+                                <h3>How to Remove Scratches from Spectacles</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, July 9, 2021</p>
+                            <p class="content"></p>
+                            <p>So, you finally bought those spectacles you have been eyeing for a while. But after a few days, you notice scratches on them. Imagine how crest-fallen that could make you feel? For someone who has to wear eyeglasses to see…
+                            </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="How to Remove Scratches from Spectacles" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="All About Menopause: Signs &amp; Symptoms and More">
+                            <img class="img-responsive" width="200" alt="All About Menopause: Signs &amp; Symptoms and More" data-pagespeed-url-hash="2681956228" src="https://blog.medplusmart.com/wp-content/uploads/2021/07/All-About-Menopause.jpg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="All About Menopause: Signs &amp; Symptoms and More">
+                                <h3>All About Menopause: Signs &amp; Symptoms and More</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, July 6, 2021</p>
+                            <p class="content"></p>
+                            <p>If you are a woman above 40, feeling hot, sweating bucket loads, and don’t even have the weather to blame, it is most probably your body telling you that you might expect your menopause. This is usually a classic sign.… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="All About Menopause: Signs &amp; Symptoms and More" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Dysmenorrhea: What Is It? Causes, Symptoms &amp; Treatment">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/07/Period-Pain-Explained-blog.jpg" width="200" alt="Dysmenorrhea: What Is It? Causes, Symptoms &amp; Treatment">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Dysmenorrhea: What Is It? Causes, Symptoms &amp; Treatment">
+                                <h3>Dysmenorrhea: What Is It? Causes, Symptoms &amp; Treatment</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 3 July, 2021</p>
+                            <p class="content"></p>
+                            <p>So what is dysmenorrhea? The pain and discomfort associated with menstruation is called dysmenorrhea. It is quite a common occurrence so much so that more than half of women who get their periods have some pain for at least
+                                1… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Dysmenorrhea: What Is It? Causes, Symptoms &amp; Treatment" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Foods to Avoid During Pregnancy">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Foods-to-Avoid-During-Pregnancy.jpg" width="200" alt="Foods to Avoid During Pregnancy">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Foods to Avoid During Pregnancy">
+                                <h3>Foods to Avoid During Pregnancy</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 28 June, 2021</p>
+                            <p class="content"></p>
+                            <p>Pregnancy is the most beautiful time for any woman. During this time, whatever you eat, you share it with the baby as well. That is why there are certain foods that might be fit for you but not recommended for… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Foods to Avoid During Pregnancy" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="10 Benefits of Eating Healthy Food">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Benefits-of-Eating-Healthy-2.jpg" width="200" alt="10 Benefits of Eating Healthy Food">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="10 Benefits of Eating Healthy Food">
+                                <h3>10 Benefits of Eating Healthy Food</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 24 June, 2021</p>
+                            <p class="content"></p>
+                            <p>It is said that “you are what you eat, so don’t be fast or cheap.” We know with certainty that food is a necessity that we can not survive long without. However, it is entirely up to us to choose… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="10 Benefits of Eating Healthy Food" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Control Weight Gain during Menopause">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Control-Weight-Gain-During-Menopause.jpg" width="200" alt="Control Weight Gain during Menopause">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Control Weight Gain during Menopause">
+                                <h3>Control Weight Gain during Menopause</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 21 June, 2021</p>
+                            <p class="content"></p>
+                            <p>While menopause is inevitable, there are different exercises and lifestyle tips that can help control early menopause weight gain. The question that arises is that why is it vital to&nbsp;stop weight gain during menopause?
+                                Furthermore, if it is significant, then&nbsp;how… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Control Weight Gain during Menopause" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="The Different Types Of Covid-19 Tests">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Types-of-Covid-Tests-1.jpg" width="200" alt="The Different Types Of Covid-19 Tests">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="The Different Types Of Covid-19 Tests">
+                                <h3>The Different Types Of Covid-19 Tests</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 17 June, 2021</p>
+                            <p class="content"></p>
+                            <p>The first step to deal with the Coronavirus infection and treat it is to diagnose it. In this article, the various types of Covid-19 tests and their limitations have been discussed. But first,&nbsp;what is the Coronavirus?
+                                Coronavirus is an infectious… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="The Different Types Of Covid-19 Tests" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Vaccinations for Infants &amp; Children, Age 0-10 Years">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Infants-Children-Vaccination-1.jpg" width="200" alt="Vaccinations for Infants &amp; Children, Age 0-10 Years">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Vaccinations for Infants &amp; Children, Age 0-10 Years">
+                                <h3>Vaccinations for Infants &amp; Children, Age 0-10 Years</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 14 June, 2021</p>
+                            <p class="content"></p>
+                            <p>The timely vaccination of kids is important so that their immune system remains strong enough to protect their bodies against preventable diseases. Parents must keep track of the childhood vaccination schedule and get their
+                                kids vaccinated from time to time.… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Vaccinations for Infants &amp; Children, Age 0-10 Years" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Home Remedies for Whooping Cough">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Home-Remedies-for-Whooping-Cough-2.jpg" width="200" alt="Home Remedies for Whooping Cough">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Home Remedies for Whooping Cough">
+                                <h3>Home Remedies for Whooping Cough</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 9 June, 2021</p>
+                            <p class="content"></p>
+                            <p>If you are suffering from persistent cough during regular breathing, then there are high chances that you may be suffering from whooping cough. Pertussis or whooping cough is a contagious disease that affects our respiratory
+                                system. The patient may have… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Home Remedies for Whooping Cough" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="9 Home Remedies to Cure Constipation Naturally">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/06/Treat-Constipation-Naturally-at-Home-1.jpg" width="200" alt="9 Home Remedies to Cure Constipation Naturally">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="9 Home Remedies to Cure Constipation Naturally">
+                                <h3>9 Home Remedies to Cure Constipation Naturally</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 6 June, 2021</p>
+                            <p class="content"></p>
+                            <p>Constipation is one of the most commonly known problems that we face. At least three out of five people have issues going to the bathroom. Although you do have many over-the-counter medicines to cure constipation, they may
+                                sometimes pose various… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="9 Home Remedies to Cure Constipation Naturally" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Placenta Previa: What Is It and What to Do?">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/05/Placenta-Previa.jpg" width="200" alt="Placenta Previa: What Is It and What to Do?">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Placenta Previa: What Is It and What to Do?">
+                                <h3>Placenta Previa: What Is It and What to Do?</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 27 May, 2021</p>
+                            <p class="content"></p>
+                            <p>Childbirth is beautiful. However, sometimes, it may present certain conditions which can create complications, not only for the mother but also for the baby. One such condition is placenta previa. In this article, we will see
+                                the meaning of placenta… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Placenta Previa: What Is It and What to Do?" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="thumbnail card blogDiv">
+
+
+
+                        <a href="#" title="Top 13 Calcium Rich Indian Foods List">
+                            <img class="img-responsive" src="https://blog.medplusmart.com/wp-content/uploads/2021/05/Calcium-Foods-in-India.jpg" width="200" alt="Top 13 Calcium Rich Indian Foods List">
+                        </a>
+
+
+                        <div class="caption card-content">
+
+
+
+                            <a href="#" title="Top 13 Calcium Rich Indian Foods List">
+                                <h3>Top 13 Calcium Rich Indian Foods List</h3>
+                            </a>
+
+
+                            <p class="tagline">by MedPlus Team, 24 May, 2021</p>
+                            <p class="content"></p>
+                            <p>Calcium is one of the essential minerals that the human body needs for maintaining healthy and strong bones. The mineral is also necessary for terms of maintaining the proper functioning of our body parts. Therefore, it is
+                                essential to add… </p>
+                            <p></p>
+                            <div class="clearfix"></div>
+
+
+
+                            <a href="#" title="Top 13 Calcium Rich Indian Foods List" class="btn-btn-red-pull-right">
+	      				Full Article <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+	      			</a>
+
+
+                        </div>
+                    </div>
+                    <hr>
+
+
+
+                </div>
+                <div class="container-fluid">
+                    <div class="col-sm-12 col-md-12 text-center margin-b-20 margin-l padding-none">
+                        <button type="button" id="blogloadmorepost" onclick="blogLoadMore()" style="display:none" class="btn btn-default btn-block">Load More</button>
+                    </div>
+                </div>
+                <div id="lastBlog"></div>
+
+                <div id="postsLoader" style="display:none;">
+                    <div class="sc-disablebox hidden-xs">
+                        <div class="typing_loader" style="margin-top:35%;"></div>
+                    </div>
+                    <div class="sc-disablebox visible-xs p-fix" style="bottom:30%;">
+                        <div class="typing_loader" style="margin-top:35%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
